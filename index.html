@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数字旋转</title>
+		<style type="text/css">
+			div{
+				width: 500px;
+				height: 300px;
+				position: absolute;	
+				text-align: center;
+				font:bold 100px/150px "楷书";
+			}
+			.ss{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				/*background: red;*/
+				perspective:250px ;
+			}
+			.cc{
+				transform-style: preserve-3d;
+				animation: DHS 15s linear infinite;
+				
+			}
+			.cc div{ border:3px solid red; opacity:0.8; }
+			.cc div:nth-child(1) {background: url('./image/14.gif'); transform: rotateY(-40deg) translateZ(700px) ; }
+			.cc div:nth-child(2) {background: url('./image/10.gif'); transform: rotateY(-80deg) translateZ(700px) ; }
+			.cc div:nth-child(3) {background: url('./image/17.gif'); transform: rotateY(-120deg) translateZ(700px) ; }
+			.cc div:nth-child(4) {background: url('./image/12.gif'); transform: rotateY(-160deg) translateZ(700px) ; }
+			.cc div:nth-child(5) {background: url('./image/15.gif'); transform: rotateY(-200deg) translateZ(700px) ; }
+			.cc div:nth-child(6) {background: url('./image/18.gif'); transform: rotateY(-240deg) translateZ(700px) ; }
+			.cc div:nth-child(7) {background: url('./image/16.gif'); transform: rotateY(-280deg) translateZ(700px) ; }
+			.cc div:nth-child(8) {background: url('./image/19.gif'); transform: rotateY(-320deg) translateZ(700px) ; }
+			.cc div:nth-child(9) {background: url('./image/10.gif'); transform: rotateY(-360deg) translateZ(700px) ; }
+			@keyframes DHS{
+				to{ transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg); }
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ss">
+			<div class="cc">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</body>
+</html>
